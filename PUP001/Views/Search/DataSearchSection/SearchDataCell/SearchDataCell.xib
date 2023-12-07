@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Inter-Medium.ttf">
+            <string>Inter-Medium</string>
+        </array>
+        <array key="Inter-Regular.ttf">
+            <string>Inter-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" id="gTV-IL-0wX" customClass="SearchDataCell" customModule="PUP001" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="161" height="312"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="161" height="312"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WHY-4R-8he">
+                        <rect key="frame" x="0.0" y="297" width="161" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="FiZ-c4-bdk"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Inter-Medium" family="Inter" pointSize="14"/>
+                        <color key="textColor" red="0.15294117647058825" green="0.14117647058823529" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XKR-Az-2lK">
+                        <rect key="frame" x="0.0" y="0.0" width="161" height="289"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </imageView>
+                    <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="bzz-4Z-8Op">
+                        <rect key="frame" x="5" y="5" width="40" height="24"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Starsearch" translatesAutoresizingMaskIntoConstraints="NO" id="SMx-cy-g9Q">
+                                <rect key="frame" x="6" y="6" width="12" height="12"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="12" id="vwZ-tF-H5c"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7.8" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ikw-Vn-GLE">
+                                <rect key="frame" x="23" y="6" width="14" height="12"/>
+                                <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="10"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="SMx-cy-g9Q" firstAttribute="top" secondItem="bzz-4Z-8Op" secondAttribute="top" constant="6" id="09O-Ul-7kv"/>
+                            <constraint firstAttribute="bottom" secondItem="SMx-cy-g9Q" secondAttribute="bottom" constant="6" id="9iL-ag-xL9"/>
+                            <constraint firstItem="ikw-Vn-GLE" firstAttribute="top" secondItem="bzz-4Z-8Op" secondAttribute="top" constant="6" id="Bc5-Ig-F59"/>
+                            <constraint firstItem="SMx-cy-g9Q" firstAttribute="leading" secondItem="bzz-4Z-8Op" secondAttribute="leading" constant="6" id="C0r-4I-2cx"/>
+                            <constraint firstAttribute="height" constant="24" id="CrJ-4e-jcp"/>
+                            <constraint firstItem="ikw-Vn-GLE" firstAttribute="centerY" secondItem="SMx-cy-g9Q" secondAttribute="centerY" id="j9F-eA-ZHW"/>
+                            <constraint firstItem="ikw-Vn-GLE" firstAttribute="leading" secondItem="SMx-cy-g9Q" secondAttribute="trailing" constant="5" id="rK0-jw-eUJ"/>
+                            <constraint firstAttribute="width" constant="40" id="vJr-uR-rPI"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="XKR-Az-2lK" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="5q1-D1-Fuv"/>
+                <constraint firstItem="XKR-Az-2lK" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="8tz-6Y-csZ"/>
+                <constraint firstAttribute="trailing" secondItem="XKR-Az-2lK" secondAttribute="trailing" id="8wd-8R-AdK"/>
+                <constraint firstAttribute="bottom" secondItem="WHY-4R-8he" secondAttribute="bottom" id="CsX-v4-qxz"/>
+                <constraint firstAttribute="trailing" secondItem="WHY-4R-8he" secondAttribute="trailing" id="Mha-iC-L7H"/>
+                <constraint firstItem="WHY-4R-8he" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="bdI-Sn-Sqs"/>
+                <constraint firstItem="WHY-4R-8he" firstAttribute="top" secondItem="XKR-Az-2lK" secondAttribute="bottom" constant="8" id="eIP-WD-pla"/>
+                <constraint firstItem="bzz-4Z-8Op" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="gws-6f-avs"/>
+                <constraint firstItem="bzz-4Z-8Op" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="zNg-6f-0Br"/>
+            </constraints>
+            <size key="customSize" width="161" height="312"/>
+            <connections>
+                <outlet property="imgSearch" destination="XKR-Az-2lK" id="K0d-Nu-q1N"/>
+                <outlet property="lblName" destination="WHY-4R-8he" id="mpi-Ow-Y83"/>
+                <outlet property="lblVote" destination="ikw-Vn-GLE" id="gk0-43-pM8"/>
+                <outlet property="viewVote" destination="bzz-4Z-8Op" id="z0m-MS-aYV"/>
+            </connections>
+            <point key="canvasLocation" x="212.31884057971016" y="142.63392857142856"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Starsearch" width="12" height="12"/>
+    </resources>
+</document>

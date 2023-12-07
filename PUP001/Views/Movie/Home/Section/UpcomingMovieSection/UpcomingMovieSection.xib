@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-SemiBold.ttf">
+            <string>Poppins-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="UpcomingMovieSection" customModule="PUP001" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="406" height="275"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="406" height="275"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Upcoming movie" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FfI-zL-M22">
+                        <rect key="frame" x="16" y="0.0" width="390" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="aW9-9U-OVW"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins SemiBold" pointSize="18"/>
+                        <color key="textColor" red="0.1529411765" green="0.14117647059999999" blue="0.34901960780000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="KIB-AV-IIn">
+                        <rect key="frame" x="0.0" y="36" width="406" height="239"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="1yc-FF-T9z">
+                            <size key="itemSize" width="128" height="128"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2pv-io-xFL">
+                        <rect key="frame" x="381" y="0.0" width="9" height="17"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" image="Next"/>
+                        <connections>
+                            <action selector="btnNext:" destination="gTV-IL-0wX" eventType="touchUpInside" id="QvU-Xc-vO8"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="FfI-zL-M22" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="16" id="89w-QE-pBy"/>
+                <constraint firstItem="2pv-io-xFL" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="A9D-bQ-5HM"/>
+                <constraint firstItem="KIB-AV-IIn" firstAttribute="top" secondItem="FfI-zL-M22" secondAttribute="bottom" constant="12" id="BG6-mM-qXf"/>
+                <constraint firstItem="KIB-AV-IIn" firstAttribute="top" secondItem="2pv-io-xFL" secondAttribute="bottom" constant="19" id="WDj-oX-O84"/>
+                <constraint firstItem="KIB-AV-IIn" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="eMo-VG-4Di"/>
+                <constraint firstAttribute="bottom" secondItem="KIB-AV-IIn" secondAttribute="bottom" id="jV2-t0-mrY"/>
+                <constraint firstAttribute="trailing" secondItem="FfI-zL-M22" secondAttribute="trailing" id="pHT-PG-JZT"/>
+                <constraint firstItem="FfI-zL-M22" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="rHl-jo-EaP"/>
+                <constraint firstAttribute="trailing" secondItem="2pv-io-xFL" secondAttribute="trailing" constant="16" id="s9I-Lq-4Gv"/>
+                <constraint firstAttribute="trailing" secondItem="KIB-AV-IIn" secondAttribute="trailing" id="tkh-AL-y6j"/>
+            </constraints>
+            <size key="customSize" width="406" height="275"/>
+            <connections>
+                <outlet property="collectionView" destination="KIB-AV-IIn" id="W5o-AF-fOr"/>
+            </connections>
+            <point key="canvasLocation" x="-59.420289855072468" y="67.96875"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Next" width="9" height="17.5"/>
+    </resources>
+</document>

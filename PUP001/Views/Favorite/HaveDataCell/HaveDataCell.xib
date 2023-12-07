@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Inter-Medium.ttf">
+            <string>Inter-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" id="gTV-IL-0wX" customClass="HaveDataCell" customModule="PUP001" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="258"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="200" height="258"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="frame1" translatesAutoresizingMaskIntoConstraints="NO" id="ADx-Dc-hSC">
+                        <rect key="frame" x="0.0" y="0.0" width="200" height="233"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qeY-aw-Uzy">
+                        <rect key="frame" x="0.0" y="241" width="200" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="17" id="GGh-En-AuZ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Inter-Medium" family="Inter" pointSize="14"/>
+                        <color key="textColor" red="0.15294117647058825" green="0.14117647058823529" blue="0.34901960784313724" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zAx-sp-l0s">
+                        <rect key="frame" x="174" y="6" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="8sr-YJ-zbw"/>
+                            <constraint firstAttribute="height" constant="20" id="HHg-d1-OQ1"/>
+                        </constraints>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" image="ic_favorite"/>
+                        <connections>
+                            <action selector="btnFavorite:" destination="gTV-IL-0wX" eventType="touchUpInside" id="Vpa-tC-JFi"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="ADx-Dc-hSC" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="0Et-ay-W46"/>
+                <constraint firstItem="qeY-aw-Uzy" firstAttribute="top" secondItem="ADx-Dc-hSC" secondAttribute="bottom" constant="8" id="1MU-EY-dEj"/>
+                <constraint firstAttribute="trailing" secondItem="ADx-Dc-hSC" secondAttribute="trailing" id="7jk-I8-US8"/>
+                <constraint firstItem="qeY-aw-Uzy" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="L8f-Fy-amq"/>
+                <constraint firstItem="ADx-Dc-hSC" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="QtE-E5-tsl"/>
+                <constraint firstAttribute="trailing" secondItem="qeY-aw-Uzy" secondAttribute="trailing" id="cn3-L6-5os"/>
+                <constraint firstAttribute="bottom" secondItem="qeY-aw-Uzy" secondAttribute="bottom" id="gKF-1E-FE3"/>
+                <constraint firstItem="zAx-sp-l0s" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="6" id="t17-ZD-eck"/>
+                <constraint firstAttribute="trailing" secondItem="zAx-sp-l0s" secondAttribute="trailing" constant="6" id="ydu-YX-5XS"/>
+            </constraints>
+            <size key="customSize" width="200" height="258"/>
+            <connections>
+                <outlet property="btnFavorite" destination="zAx-sp-l0s" id="BBu-Wc-Pvq"/>
+                <outlet property="imgAvatar" destination="ADx-Dc-hSC" id="WPh-W5-Yeg"/>
+                <outlet property="lblName" destination="qeY-aw-Uzy" id="hwh-kz-tNy"/>
+            </connections>
+            <point key="canvasLocation" x="141.98473282442748" y="-15.492957746478874"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="frame1" width="120" height="177.33332824707031"/>
+        <image name="ic_favorite" width="20" height="20"/>
+    </resources>
+</document>

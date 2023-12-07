@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SFPRODISPLAYMEDIUM.OTF">
+            <string>SFProDisplay-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" id="gTV-IL-0wX" customClass="ShareCell" customModule="PUP001" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="519" height="107"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="519" height="107"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_share" translatesAutoresizingMaskIntoConstraints="NO" id="tHc-xZ-E6F">
+                        <rect key="frame" x="16" y="24" width="38" height="38"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="38" id="Yu8-GK-MWh"/>
+                            <constraint firstAttribute="width" constant="38" id="sBj-q5-PFo"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Share App" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WJA-M1-bzl">
+                        <rect key="frame" x="78" y="33.666666666666664" width="386" height="19"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="19" id="fOd-Yt-K5J"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="16"/>
+                        <color key="textColor" red="0.15294117647058825" green="0.14117647058823529" blue="0.34901960784313724" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Next" translatesAutoresizingMaskIntoConstraints="NO" id="zb6-Lw-CSN">
+                        <rect key="frame" x="488" y="37" width="6" height="12"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="12" id="B5e-Ss-CoL"/>
+                            <constraint firstAttribute="width" constant="6" id="SMj-ZN-CTe"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="URp-Rc-m9J">
+                        <rect key="frame" x="16" y="86" width="487" height="1"/>
+                        <color key="backgroundColor" red="0.90980392156862744" green="0.92156862745098034" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="UtS-lg-If6"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="URp-Rc-m9J" firstAttribute="top" secondItem="tHc-xZ-E6F" secondAttribute="bottom" constant="24" id="2ia-Pm-qfZ"/>
+                <constraint firstItem="URp-Rc-m9J" firstAttribute="leading" secondItem="tHc-xZ-E6F" secondAttribute="leading" id="7VB-gS-Nyc"/>
+                <constraint firstAttribute="trailing" secondItem="zb6-Lw-CSN" secondAttribute="trailing" constant="25" id="AiK-Mi-Ltg"/>
+                <constraint firstItem="zb6-Lw-CSN" firstAttribute="leading" secondItem="WJA-M1-bzl" secondAttribute="trailing" constant="24" id="GZ5-Y3-rfc"/>
+                <constraint firstItem="WJA-M1-bzl" firstAttribute="leading" secondItem="tHc-xZ-E6F" secondAttribute="trailing" constant="24" id="IHE-AX-bRx"/>
+                <constraint firstItem="tHc-xZ-E6F" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="24" id="OtZ-Gr-aXa"/>
+                <constraint firstItem="zb6-Lw-CSN" firstAttribute="centerY" secondItem="WJA-M1-bzl" secondAttribute="centerY" id="eGP-QF-VTL"/>
+                <constraint firstItem="WJA-M1-bzl" firstAttribute="centerY" secondItem="tHc-xZ-E6F" secondAttribute="centerY" id="j33-uo-4Ow"/>
+                <constraint firstItem="URp-Rc-m9J" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="16" id="xLg-Xt-p2d"/>
+                <constraint firstAttribute="trailing" secondItem="URp-Rc-m9J" secondAttribute="trailing" constant="16" id="xs4-e8-d3e"/>
+                <constraint firstItem="tHc-xZ-E6F" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="16" id="ynt-Zc-waz"/>
+            </constraints>
+            <size key="customSize" width="519" height="107"/>
+            <point key="canvasLocation" x="260.30534351145036" y="1.0563380281690142"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Next" width="8.6666669845581055" height="17.666666030883789"/>
+        <image name="ic_share" width="38" height="38"/>
+    </resources>
+</document>

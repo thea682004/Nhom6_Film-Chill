@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Inter-Regular.ttf">
+            <string>Inter-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchVC" customModule="PUP001" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="8Xz-6s-KjN" id="V0X-Zk-WxR"/>
+                <outlet property="heightConstraint" destination="c21-ny-0hp" id="nEf-BW-g9l"/>
+                <outlet property="imgNoData" destination="ZmG-Mp-gml" id="sr0-ET-p9N"/>
+                <outlet property="lblCancel" destination="UZJ-VM-lnQ" id="HhZ-0h-eqb"/>
+                <outlet property="lblClear" destination="W9d-kO-4gj" id="9oG-2j-XCy"/>
+                <outlet property="lblHistory" destination="uvM-GF-RgZ" id="4SB-zf-dCa"/>
+                <outlet property="searchBar" destination="ELT-wS-t4M" id="g3E-8a-jII"/>
+                <outlet property="topLblHistory" destination="W3o-I0-IzR" id="R9S-Oe-rHe"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleAspectFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <searchBar contentMode="redraw" placeholder="Search Movie, TV Show, Actor..." translatesAutoresizingMaskIntoConstraints="NO" id="ELT-wS-t4M">
+                    <rect key="frame" x="16" y="59" width="320" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="o46-Hs-VPZ"/>
+                    </constraints>
+                    <textInputTraits key="textInputTraits"/>
+                </searchBar>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="History" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uvM-GF-RgZ">
+                    <rect key="frame" x="16" y="123" width="54.5" height="19"/>
+                    <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="16"/>
+                    <color key="textColor" red="0.15294117647058825" green="0.14117647058823529" blue="0.34901960784313724" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Clear all" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W9d-kO-4gj">
+                    <rect key="frame" x="352" y="125" width="46" height="15"/>
+                    <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="12"/>
+                    <color key="textColor" red="0.15294117647058825" green="0.14117647058823529" blue="0.34901960784313724" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cancel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UZJ-VM-lnQ">
+                    <rect key="frame" x="352" y="70.5" width="46" height="17"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="17" id="cTk-ON-EE4"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="14"/>
+                    <color key="textColor" red="0.63137254901960782" green="0.63137254901960782" blue="0.63137254901960782" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" keyboardDismissMode="onDrag" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="8Xz-6s-KjN">
+                    <rect key="frame" x="0.0" y="142" width="414" height="123"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="123" id="c21-ny-0hp"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="eyT-za-tqa">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nodata" translatesAutoresizingMaskIntoConstraints="NO" id="ZmG-Mp-gml">
+                    <rect key="frame" x="139" y="377.5" width="136" height="155"/>
+                </imageView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.94117647058823528" green="0.95294117647058818" blue="0.97254901960784312" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="UZJ-VM-lnQ" firstAttribute="leading" secondItem="ELT-wS-t4M" secondAttribute="trailing" constant="16" id="17O-Sw-bkt"/>
+                <constraint firstItem="W9d-kO-4gj" firstAttribute="centerY" secondItem="uvM-GF-RgZ" secondAttribute="centerY" id="42u-UF-IW0"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="8Xz-6s-KjN" secondAttribute="trailing" id="8Ti-9d-xqM"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="UZJ-VM-lnQ" secondAttribute="trailing" constant="16" id="ACe-ho-cc9"/>
+                <constraint firstItem="uvM-GF-RgZ" firstAttribute="top" secondItem="ELT-wS-t4M" secondAttribute="bottom" constant="24" id="W3o-I0-IzR"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="W9d-kO-4gj" secondAttribute="trailing" constant="16" id="YcA-TL-cXW"/>
+                <constraint firstItem="8Xz-6s-KjN" firstAttribute="top" secondItem="uvM-GF-RgZ" secondAttribute="bottom" id="YmB-Hc-427"/>
+                <constraint firstItem="ELT-wS-t4M" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="cnN-xr-YSp"/>
+                <constraint firstItem="UZJ-VM-lnQ" firstAttribute="centerY" secondItem="ELT-wS-t4M" secondAttribute="centerY" id="h92-Wr-eO2"/>
+                <constraint firstItem="uvM-GF-RgZ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="iBA-O2-sYC"/>
+                <constraint firstItem="8Xz-6s-KjN" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="o0c-0A-Md2"/>
+                <constraint firstItem="ELT-wS-t4M" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" constant="-78" id="oYl-Mu-shd"/>
+                <constraint firstItem="ZmG-Mp-gml" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="rHC-z3-vbK"/>
+                <constraint firstItem="ELT-wS-t4M" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="59" id="slk-X1-37Z"/>
+                <constraint firstItem="ZmG-Mp-gml" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="vfe-Ce-Glu"/>
+            </constraints>
+            <point key="canvasLocation" x="131.8840579710145" y="50.892857142857139"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="nodata" width="136" height="155"/>
+    </resources>
+</document>

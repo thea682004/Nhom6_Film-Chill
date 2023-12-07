@@ -1,0 +1,86 @@
+{
+  "pins" : [
+    {
+      "identity" : "admobmanager",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/trinhxuanminh/AdMobManager.git",
+      "state" : {
+        "revision" : "439601212a89a10a51976d2e854d2a954ba3c6ba",
+        "version" : "2.1.0"
+      }
+    },
+    {
+      "identity" : "googleappmeasurement",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/google/GoogleAppMeasurement.git",
+      "state" : {
+        "revision" : "03b9beee1a61f62d32c521e172e192a1663a5e8b",
+        "version" : "10.13.0"
+      }
+    },
+    {
+      "identity" : "googleutilities",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/google/GoogleUtilities.git",
+      "state" : {
+        "revision" : "c38ce365d77b04a9a300c31061c5227589e5597b",
+        "version" : "7.11.5"
+      }
+    },
+    {
+      "identity" : "nanopb",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/firebase/nanopb.git",
+      "state" : {
+        "revision" : "819d0a2173aff699fb8c364b6fb906f7cdb1a692",
+        "version" : "2.30909.0"
+      }
+    },
+    {
+      "identity" : "nvactivityindicatorview",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ninjaprox/NVActivityIndicatorView",
+      "state" : {
+        "revision" : "bcb52371f2259254bac6690f92bb474a61768c47",
+        "version" : "5.1.1"
+      }
+    },
+    {
+      "identity" : "promises",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/google/promises.git",
+      "state" : {
+        "revision" : "e70e889c0196c76d22759eb50d6a0270ca9f1d9e",
+        "version" : "2.3.1"
+      }
+    },
+    {
+      "identity" : "snapkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SnapKit/SnapKit",
+      "state" : {
+        "revision" : "f222cbdf325885926566172f6f5f06af95473158",
+        "version" : "5.6.0"
+      }
+    },
+    {
+      "identity" : "swift-package-manager-google-mobile-ads",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/googleads/swift-package-manager-google-mobile-ads.git",
+      "state" : {
+        "revision" : "78f4c64d0f1900e54529e4c78075d663ca67d6e0",
+        "version" : "9.14.0"
+      }
+    },
+    {
+      "identity" : "swift-package-manager-google-user-messaging-platform",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/googleads/swift-package-manager-google-user-messaging-platform.git",
+      "state" : {
+        "revision" : "129fa838520cd02174f890ae0cfe0242e60714ae",
+        "version" : "2.1.0"
+      }
+    }
+  ],
+  "version" : 2
+}

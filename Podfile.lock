@@ -1,0 +1,73 @@
+PODS:
+  - Alamofire (5.7.1)
+  - ALProgressView (2.0.0)
+  - BetterSegmentedControl (2.0.1)
+  - CollectionViewPagingLayout (1.1.0)
+  - MBCircularProgressBar (0.3.5)
+  - Moya (15.0.0):
+    - Moya/Core (= 15.0.0)
+  - Moya/Core (15.0.0):
+    - Alamofire (~> 5.0)
+  - NVActivityIndicatorView (5.1.1):
+    - NVActivityIndicatorView/Base (= 5.1.1)
+  - NVActivityIndicatorView/Base (5.1.1)
+  - Realm (10.40.2):
+    - Realm/Headers (= 10.40.2)
+  - Realm/Headers (10.40.2)
+  - RealmSwift (10.40.2):
+    - Realm (= 10.40.2)
+  - SDWebImage (5.16.0):
+    - SDWebImage/Core (= 5.16.0)
+  - SDWebImage/Core (5.16.0)
+  - SnapKit (5.6.0)
+  - TTGTagCollectionView (2.4.2)
+  - YouTubePlayer (0.7.2)
+
+DEPENDENCIES:
+  - Alamofire
+  - ALProgressView
+  - BetterSegmentedControl (~> 2.0)
+  - CollectionViewPagingLayout
+  - MBCircularProgressBar
+  - Moya (~> 15.0)
+  - NVActivityIndicatorView
+  - RealmSwift
+  - SDWebImage (~> 5.0)
+  - SnapKit (~> 5.6.0)
+  - TTGTagCollectionView
+  - YouTubePlayer
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - ALProgressView
+    - BetterSegmentedControl
+    - CollectionViewPagingLayout
+    - MBCircularProgressBar
+    - Moya
+    - NVActivityIndicatorView
+    - Realm
+    - RealmSwift
+    - SDWebImage
+    - SnapKit
+    - TTGTagCollectionView
+    - YouTubePlayer
+
+SPEC CHECKSUMS:
+  Alamofire: 0123a34370cb170936ae79a8df46cc62b2edeb88
+  ALProgressView: 547883405970e932d8f1f12b605aa4f6df08f155
+  BetterSegmentedControl: 09607b27861d49cbce48b7673b74f9150a3d371a
+  CollectionViewPagingLayout: 2f8d50683bae57ca88f47fa4ab0195c9079582cf
+  MBCircularProgressBar: 0b795b722a5eb5b0923822f90474e2576a1a7855
+  Moya: 138f0573e53411fb3dc17016add0b748dfbd78ee
+  NVActivityIndicatorView: 1f6c5687f1171810aa27a3296814dc2d7dec3667
+  Realm: 731e86d9388287b18e36b0beb2493fc4845ce8a2
+  RealmSwift: c2a1059ba52e1e08467b1253b1d4ab354ef3177b
+  SDWebImage: 2aea163b50bfcb569a2726b6a754c54a4506fcf6
+  SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
+  TTGTagCollectionView: 0d4625aaf7ee3ad755c39d549368a4ce69bd17d1
+  YouTubePlayer: 2b5f2830d8f9b2cde942083211291e382c9e6bd5
+
+PODFILE CHECKSUM: 02acc2213c49c8e95304e7ac81c5187a5afb6162
+
+COCOAPODS: 1.13.0

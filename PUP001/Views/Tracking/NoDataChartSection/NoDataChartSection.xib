@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Inter-Medium.ttf">
+            <string>Inter-Medium</string>
+        </array>
+        <array key="Inter-SemiBold.ttf">
+            <string>Inter-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" id="gTV-IL-0wX" customClass="NoDataChartSection" customModule="PUP001" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="301" height="336"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="301" height="336"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="uzk-Wb-5lr">
+                        <rect key="frame" x="0.0" y="0.0" width="301" height="336"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_chartNoData" translatesAutoresizingMaskIntoConstraints="NO" id="2Yb-sQ-tFz">
+                                <rect key="frame" x="75.666666666666686" y="36" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="Onh-U7-zsS"/>
+                                    <constraint firstAttribute="height" constant="150" id="Std-rf-D0g"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No data was found" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MWj-xg-AkJ">
+                                <rect key="frame" x="60.333333333333329" y="210" width="180.66666666666669" height="23.333333333333343"/>
+                                <fontDescription key="fontDescription" name="Inter-SemiBold" family="Inter" pointSize="20"/>
+                                <color key="textColor" red="0.15294117647058825" green="0.14117647058823529" blue="0.34901960784313724" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nfC-sO-mK1">
+                                <rect key="frame" x="59" y="257.33333333333331" width="183" height="51"/>
+                                <color key="backgroundColor" red="0.95294117647058818" green="0.36078431372549019" blue="0.33725490196078434" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="Weg-Sa-Dqj"/>
+                                    <constraint firstAttribute="width" constant="183" id="sxq-ci-tWu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Inter-Medium" family="Inter" pointSize="16"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Add to watchlist"/>
+                                <connections>
+                                    <action selector="btnAddWatchlist:" destination="gTV-IL-0wX" eventType="touchUpInside" id="dW1-yg-J4i"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="MWj-xg-AkJ" firstAttribute="centerX" secondItem="2Yb-sQ-tFz" secondAttribute="centerX" id="2I5-1J-Sy1"/>
+                            <constraint firstItem="nfC-sO-mK1" firstAttribute="centerX" secondItem="MWj-xg-AkJ" secondAttribute="centerX" id="The-RT-Q7X"/>
+                            <constraint firstItem="2Yb-sQ-tFz" firstAttribute="centerX" secondItem="uzk-Wb-5lr" secondAttribute="centerX" id="dpc-ic-3DM"/>
+                            <constraint firstItem="2Yb-sQ-tFz" firstAttribute="top" secondItem="uzk-Wb-5lr" secondAttribute="top" constant="36" id="iar-8m-y6J"/>
+                            <constraint firstItem="MWj-xg-AkJ" firstAttribute="top" secondItem="2Yb-sQ-tFz" secondAttribute="bottom" constant="24" id="rix-4d-Ocf"/>
+                            <constraint firstItem="nfC-sO-mK1" firstAttribute="top" secondItem="MWj-xg-AkJ" secondAttribute="bottom" constant="24" id="uxa-Ku-rTU"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="uzk-Wb-5lr" secondAttribute="bottom" id="M2x-K1-8Yp"/>
+                <constraint firstItem="uzk-Wb-5lr" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="OrV-Eh-KYb"/>
+                <constraint firstItem="uzk-Wb-5lr" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Um4-jj-gSH"/>
+                <constraint firstAttribute="trailing" secondItem="uzk-Wb-5lr" secondAttribute="trailing" id="tva-eZ-Uot"/>
+            </constraints>
+            <size key="customSize" width="301" height="336"/>
+            <connections>
+                <outlet property="btnAdd" destination="nfC-sO-mK1" id="gh9-84-9hp"/>
+                <outlet property="uiview" destination="uzk-Wb-5lr" id="kc7-VQ-gz1"/>
+            </connections>
+            <point key="canvasLocation" x="196.18320610687022" y="47.183098591549296"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ic_chartNoData" width="150.33332824707031" height="150"/>
+    </resources>
+</document>

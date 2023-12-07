@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-SemiBold.ttf">
+            <string>Poppins-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="GenresSection" customModule="PUP001" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="403" height="73"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="403" height="73"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Genres" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hTE-UV-7K0">
+                        <rect key="frame" x="16" y="0.0" width="387" height="24"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="EZU-Hy-KZ5"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins SemiBold" pointSize="18"/>
+                        <color key="textColor" red="0.15294117647058825" green="0.14117647058823529" blue="0.34901960784313724" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yPr-SQ-wHK">
+                        <rect key="frame" x="377" y="-3" width="10" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="8Q2-Fy-B1Q"/>
+                            <constraint firstAttribute="width" constant="10" id="vqe-XT-qgK"/>
+                        </constraints>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" image="Next"/>
+                        <connections>
+                            <action selector="btnNext:" destination="gTV-IL-0wX" eventType="touchUpInside" id="8fp-o1-byG"/>
+                        </connections>
+                    </button>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="ZSy-Kg-HC9">
+                        <rect key="frame" x="0.0" y="24" width="403" height="49"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="49" id="Tpu-p6-tzA"/>
+                        </constraints>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="AtU-ra-p5e">
+                            <size key="itemSize" width="128" height="128"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="yPr-SQ-wHK" secondAttribute="trailing" constant="16" id="Bpv-k8-pJx"/>
+                <constraint firstItem="hTE-UV-7K0" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="ET6-KX-xMX"/>
+                <constraint firstItem="ZSy-Kg-HC9" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Nq6-5Z-F8d"/>
+                <constraint firstAttribute="trailing" secondItem="hTE-UV-7K0" secondAttribute="trailing" id="Nt1-hs-aEv"/>
+                <constraint firstAttribute="bottom" secondItem="ZSy-Kg-HC9" secondAttribute="bottom" id="PM4-5X-SQ0"/>
+                <constraint firstItem="hTE-UV-7K0" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="YbJ-1k-bvJ"/>
+                <constraint firstItem="yPr-SQ-wHK" firstAttribute="centerY" secondItem="hTE-UV-7K0" secondAttribute="centerY" id="aO1-DH-Q2u"/>
+                <constraint firstAttribute="trailing" secondItem="ZSy-Kg-HC9" secondAttribute="trailing" id="dJs-lj-bs9"/>
+                <constraint firstItem="hTE-UV-7K0" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="16" id="kKJ-QN-fA1"/>
+                <constraint firstItem="ZSy-Kg-HC9" firstAttribute="top" secondItem="hTE-UV-7K0" secondAttribute="bottom" id="yCm-tM-S1v"/>
+            </constraints>
+            <size key="customSize" width="403" height="73"/>
+            <connections>
+                <outlet property="btnNext" destination="yPr-SQ-wHK" id="0cm-zv-hqz"/>
+                <outlet property="collectionView" destination="ZSy-Kg-HC9" id="nkm-VX-aSR"/>
+            </connections>
+            <point key="canvasLocation" x="157.24637681159422" y="71.316964285714278"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Next" width="9" height="17.5"/>
+    </resources>
+</document>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Inter-Medium.ttf">
+            <string>Inter-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ResultSearchSection" customModule="PUP001" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="431" height="462"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="431" height="462"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Movies" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7mN-jJ-dfE">
+                        <rect key="frame" x="104.33333333333333" y="1.3333333333333339" width="51.333333333333329" height="18.666666666666664"/>
+                        <fontDescription key="fontDescription" name="Inter-Medium" family="Inter" pointSize="16"/>
+                        <color key="textColor" red="0.95294117647058818" green="0.36078431372549019" blue="0.33725490196078434" alpha="0.89803921568627454" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TV Show" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yhe-lg-GL1">
+                        <rect key="frame" x="275.66666666666669" y="1.3333333333333339" width="64" height="18.666666666666664"/>
+                        <fontDescription key="fontDescription" name="Inter-Medium" family="Inter" pointSize="16"/>
+                        <color key="textColor" red="0.55686274509803924" green="0.53333333333333333" blue="0.53333333333333333" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="8hH-Ds-yuX">
+                        <rect key="frame" x="69" y="25" width="122" height="2"/>
+                        <color key="backgroundColor" red="0.95294117647058818" green="0.36078431372549019" blue="0.33725490196078434" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="2" id="2uh-GN-96N"/>
+                            <constraint firstAttribute="width" constant="122" id="MeJ-Fg-xNs"/>
+                        </constraints>
+                    </view>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="EXR-Fe-NiI">
+                        <rect key="frame" x="0.0" y="40" width="431" height="422"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="TVX-TE-cai">
+                            <size key="itemSize" width="128" height="128"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jic-uu-n0B">
+                        <rect key="frame" x="215.66666666666666" y="0.0" width="0.0" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="1jI-3q-Hhq"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="7mN-jJ-dfE" firstAttribute="centerY" secondItem="Jic-uu-n0B" secondAttribute="centerY" id="2tw-8q-FFX"/>
+                <constraint firstItem="8hH-Ds-yuX" firstAttribute="top" secondItem="7mN-jJ-dfE" secondAttribute="bottom" constant="5" id="6YX-E9-fTo"/>
+                <constraint firstItem="Jic-uu-n0B" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="8nL-gw-aoC"/>
+                <constraint firstItem="Jic-uu-n0B" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="Fcg-wN-J5k"/>
+                <constraint firstItem="Jic-uu-n0B" firstAttribute="leading" secondItem="7mN-jJ-dfE" secondAttribute="trailing" constant="60" id="KAn-DR-Tbm"/>
+                <constraint firstAttribute="trailing" secondItem="EXR-Fe-NiI" secondAttribute="trailing" id="L6A-uH-E4m"/>
+                <constraint firstItem="EXR-Fe-NiI" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Uxb-cR-h6U"/>
+                <constraint firstAttribute="bottom" secondItem="EXR-Fe-NiI" secondAttribute="bottom" id="YM8-gR-byG"/>
+                <constraint firstItem="EXR-Fe-NiI" firstAttribute="top" secondItem="8hH-Ds-yuX" secondAttribute="bottom" constant="13" id="jGL-uV-Rvp"/>
+                <constraint firstItem="Yhe-lg-GL1" firstAttribute="centerY" secondItem="Jic-uu-n0B" secondAttribute="centerY" id="kZS-i1-p4a"/>
+                <constraint firstItem="Yhe-lg-GL1" firstAttribute="leading" secondItem="Jic-uu-n0B" secondAttribute="trailing" constant="60" id="oHc-Wo-Rs6"/>
+                <constraint firstItem="8hH-Ds-yuX" firstAttribute="centerX" secondItem="7mN-jJ-dfE" secondAttribute="centerX" id="zrT-Vi-d9D"/>
+            </constraints>
+            <size key="customSize" width="431" height="462"/>
+            <connections>
+                <outlet property="centerXLineView" destination="zrT-Vi-d9D" id="F2B-BZ-ZPG"/>
+                <outlet property="collectionView" destination="EXR-Fe-NiI" id="zK1-b0-TFh"/>
+                <outlet property="lblMovies" destination="7mN-jJ-dfE" id="yED-dh-YuI"/>
+                <outlet property="lblTVShow" destination="Yhe-lg-GL1" id="cy1-Ro-cCo"/>
+                <outlet property="lineView" destination="8hH-Ds-yuX" id="a4O-uP-Ud9"/>
+            </connections>
+            <point key="canvasLocation" x="300" y="-44.366197183098592"/>
+        </collectionViewCell>
+    </objects>
+</document>

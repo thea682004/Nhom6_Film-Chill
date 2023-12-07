@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Medium.ttf">
+            <string>Poppins-Medium</string>
+        </array>
+        <array key="Poppins-SemiBold.ttf">
+            <string>Poppins-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" id="gTV-IL-0wX" customClass="SeasonSection" customModule="PUP001" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="674" height="359"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="674" height="359"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Season 2/8 Ep" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rhV-De-PYS">
+                        <rect key="frame" x="0.0" y="0.0" width="626" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="sVS-5x-pln"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins Medium" pointSize="14"/>
+                        <color key="textColor" red="0.15294117647058825" green="0.14117647058823529" blue="0.34901960784313724" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cCj-4g-XuM">
+                        <rect key="frame" x="637" y="0.0" width="37" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="1lZ-1m-GCk"/>
+                        </constraints>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" image="showup"/>
+                        <connections>
+                            <action selector="btnShow:" destination="gTV-IL-0wX" eventType="touchUpInside" id="N9R-Vb-4Ti"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Le-aO-a1w">
+                        <rect key="frame" x="0.0" y="318" width="674" height="41"/>
+                        <color key="backgroundColor" red="0.99607843137254903" green="0.93725490196078431" blue="0.93333333333333335" alpha="0.84999999999999998" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="41" id="nvR-NP-hcL"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins SemiBold" pointSize="14"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" title="See more episode">
+                            <color key="titleColor" red="0.95294117647058818" green="0.36078431372549019" blue="0.33725490196078434" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="btnSeemore:" destination="gTV-IL-0wX" eventType="touchUpInside" id="daQ-x9-Vkl"/>
+                        </connections>
+                    </button>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Ecu-iK-uJB">
+                        <rect key="frame" x="0.0" y="46" width="674" height="260"/>
+                        <color key="backgroundColor" red="0.95686274509803915" green="0.96078431372549022" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="gpc-jH-Ymo">
+                            <size key="itemSize" width="128" height="128"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_gradient" translatesAutoresizingMaskIntoConstraints="NO" id="iDN-UO-Df9">
+                        <rect key="frame" x="0.0" y="159" width="674" height="147"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="147" id="Gj6-ma-hv1"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="7Le-aO-a1w" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="89y-9B-EIc"/>
+                <constraint firstItem="Ecu-iK-uJB" firstAttribute="bottom" secondItem="iDN-UO-Df9" secondAttribute="bottom" id="ESz-Wh-vw3"/>
+                <constraint firstItem="iDN-UO-Df9" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="IHs-VH-Y7e"/>
+                <constraint firstItem="Ecu-iK-uJB" firstAttribute="top" secondItem="rhV-De-PYS" secondAttribute="bottom" constant="22" id="K3a-fs-wUi"/>
+                <constraint firstAttribute="trailing" secondItem="rhV-De-PYS" secondAttribute="trailing" constant="48" id="V6I-Xy-SMm"/>
+                <constraint firstAttribute="trailing" secondItem="iDN-UO-Df9" secondAttribute="trailing" id="X8I-S3-sUl"/>
+                <constraint firstAttribute="trailing" secondItem="cCj-4g-XuM" secondAttribute="trailing" id="Zak-y9-TDG"/>
+                <constraint firstAttribute="trailing" secondItem="Ecu-iK-uJB" secondAttribute="trailing" id="c5Y-JL-enB"/>
+                <constraint firstItem="cCj-4g-XuM" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="g7h-pO-hYi"/>
+                <constraint firstAttribute="bottom" secondItem="7Le-aO-a1w" secondAttribute="bottom" id="iXO-Ig-Tjb"/>
+                <constraint firstItem="cCj-4g-XuM" firstAttribute="centerY" secondItem="rhV-De-PYS" secondAttribute="centerY" id="mNO-g2-7Qp"/>
+                <constraint firstItem="rhV-De-PYS" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="mgF-Ej-dge"/>
+                <constraint firstAttribute="trailing" secondItem="7Le-aO-a1w" secondAttribute="trailing" id="mjR-3i-6g0"/>
+                <constraint firstItem="rhV-De-PYS" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="pa0-FH-AeC"/>
+                <constraint firstItem="7Le-aO-a1w" firstAttribute="top" secondItem="Ecu-iK-uJB" secondAttribute="bottom" constant="12" id="vuM-fe-nAS"/>
+                <constraint firstItem="cCj-4g-XuM" firstAttribute="leading" secondItem="rhV-De-PYS" secondAttribute="trailing" constant="11" id="y3B-5K-YOd"/>
+                <constraint firstItem="Ecu-iK-uJB" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="yD0-sz-Jpe"/>
+            </constraints>
+            <size key="customSize" width="674" height="359"/>
+            <connections>
+                <outlet property="btnSeemore" destination="7Le-aO-a1w" id="5uU-IH-eY5"/>
+                <outlet property="btnShow" destination="cCj-4g-XuM" id="mJ8-94-ga0"/>
+                <outlet property="collectionView" destination="Ecu-iK-uJB" id="n55-bm-2ug"/>
+                <outlet property="heightSeemore" destination="nvR-NP-hcL" id="qRC-c9-DOY"/>
+                <outlet property="imgGradient" destination="iDN-UO-Df9" id="wx4-0O-goE"/>
+                <outlet property="lblSeason" destination="rhV-De-PYS" id="fdG-Fy-nwY"/>
+            </connections>
+            <point key="canvasLocation" x="317.39130434782612" y="157.70089285714286"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ic_gradient" width="343" height="147"/>
+        <image name="showup" width="13" height="6.5"/>
+    </resources>
+</document>

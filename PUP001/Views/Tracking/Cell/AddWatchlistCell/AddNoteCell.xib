@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Inter-Medium.ttf">
+            <string>Inter-Medium</string>
+        </array>
+        <array key="Inter-SemiBold.ttf">
+            <string>Inter-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" id="gTV-IL-0wX" customClass="AddNoteCell" customModule="PUP001" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="409" height="476"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="409" height="476"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pvj-V2-pCI">
+                        <rect key="frame" x="0.0" y="0.0" width="34" height="19"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="19" id="8x3-Nx-hOd"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Inter-Medium" family="Inter" pointSize="16"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.60784313725490191" blue="0.60784313725490191" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="NPV-5P-1bo">
+                        <rect key="frame" x="0.0" y="31" width="409" height="100"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="100" id="bgl-QA-XTD"/>
+                        </constraints>
+                        <color key="textColor" red="0.15294117647058825" green="0.14117647058823529" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <fontDescription key="fontDescription" name="Inter-Medium" family="Inter" pointSize="16"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zpC-ez-Sbd">
+                        <rect key="frame" x="0.0" y="155" width="88" height="19"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="19" id="QkK-tE-Qk7"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Inter-Medium" family="Inter" pointSize="16"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.60784313725490191" blue="0.60784313725490191" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="wEE-h9-Ux4">
+                        <rect key="frame" x="0.0" y="186" width="409" height="200"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="200" id="Opd-0l-hoQ"/>
+                        </constraints>
+                        <color key="textColor" red="0.15294117647058825" green="0.14117647058823529" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <fontDescription key="fontDescription" name="Inter-Medium" family="Inter" pointSize="16"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ynw-KU-twa">
+                        <rect key="frame" x="6" y="402" width="159" height="46"/>
+                        <color key="backgroundColor" red="0.75686274509803919" green="0.77647058823529413" blue="0.80392156862745101" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="46" id="Wrg-g7-oBh"/>
+                            <constraint firstAttribute="width" constant="159" id="XNa-0y-GM3"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Inter-SemiBold" family="Inter" pointSize="16"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" title="Cancel">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <connections>
+                            <action selector="btnCancle:" destination="gTV-IL-0wX" eventType="touchUpInside" id="XQt-Z4-3Pn"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z3Z-Fk-fSt">
+                        <rect key="frame" x="244" y="402" width="159" height="46"/>
+                        <color key="backgroundColor" red="0.95294117647058818" green="0.36078431372549019" blue="0.33725490196078434" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="46" id="fbk-dq-9IN"/>
+                            <constraint firstAttribute="width" constant="159" id="kHw-Fk-a07"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Inter-SemiBold" family="Inter" pointSize="16"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" title="Add">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <connections>
+                            <action selector="btnAdd:" destination="gTV-IL-0wX" eventType="touchUpInside" id="GXq-pk-rCe"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0/100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XLr-NB-gLy">
+                        <rect key="frame" x="353.33333333333331" y="108" width="33.666666666666686" height="19"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="19" id="JMW-oY-40J"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Inter-Medium" family="Inter" pointSize="12"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.60784313725490191" blue="0.60784313725490191" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0/300" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cjI-zU-f2B">
+                        <rect key="frame" x="349.33333333333331" y="366" width="35.666666666666686" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="OX8-80-ydJ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Inter-Medium" family="Inter" pointSize="12"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.60784313725490191" blue="0.60784313725490191" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="wEE-h9-Ux4" secondAttribute="trailing" id="32r-3C-59L"/>
+                <constraint firstItem="zpC-ez-Sbd" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="7zg-GJ-H6b"/>
+                <constraint firstItem="ynw-KU-twa" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="6" id="Ehj-6r-VyH"/>
+                <constraint firstAttribute="trailing" secondItem="Z3Z-Fk-fSt" secondAttribute="trailing" constant="6" id="Fkn-gR-SxV"/>
+                <constraint firstItem="NPV-5P-1bo" firstAttribute="top" secondItem="pvj-V2-pCI" secondAttribute="bottom" constant="12" id="JHT-O9-Tdh"/>
+                <constraint firstItem="zpC-ez-Sbd" firstAttribute="top" secondItem="NPV-5P-1bo" secondAttribute="bottom" constant="24" id="N6G-HS-5SM"/>
+                <constraint firstItem="cjI-zU-f2B" firstAttribute="top" secondItem="wEE-h9-Ux4" secondAttribute="top" constant="180" id="NQY-b6-I62"/>
+                <constraint firstItem="wEE-h9-Ux4" firstAttribute="top" secondItem="zpC-ez-Sbd" secondAttribute="bottom" constant="12" id="Neb-zx-VTr"/>
+                <constraint firstItem="ynw-KU-twa" firstAttribute="top" secondItem="wEE-h9-Ux4" secondAttribute="bottom" constant="16" id="ThR-BO-C3J"/>
+                <constraint firstAttribute="trailing" secondItem="XLr-NB-gLy" secondAttribute="trailing" constant="22" id="VFZ-ac-tTZ"/>
+                <constraint firstItem="NPV-5P-1bo" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="are-mG-Kfk"/>
+                <constraint firstItem="pvj-V2-pCI" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="c1P-yF-m0i"/>
+                <constraint firstAttribute="trailing" secondItem="cjI-zU-f2B" secondAttribute="trailing" constant="24" id="cnM-63-t63"/>
+                <constraint firstItem="wEE-h9-Ux4" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="cyb-5X-tbM"/>
+                <constraint firstAttribute="trailing" secondItem="NPV-5P-1bo" secondAttribute="trailing" id="dZo-I3-9aE"/>
+                <constraint firstItem="pvj-V2-pCI" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="e8d-DZ-Hut"/>
+                <constraint firstItem="XLr-NB-gLy" firstAttribute="top" secondItem="NPV-5P-1bo" secondAttribute="top" constant="77" id="iwI-2c-zrD"/>
+                <constraint firstItem="Z3Z-Fk-fSt" firstAttribute="top" secondItem="wEE-h9-Ux4" secondAttribute="bottom" constant="16" id="jYD-ou-3yu"/>
+            </constraints>
+            <size key="customSize" width="409" height="476"/>
+            <connections>
+                <outlet property="btnAdd" destination="Z3Z-Fk-fSt" id="uXm-Ne-o7M"/>
+                <outlet property="btnCancel" destination="ynw-KU-twa" id="OEC-q1-xEa"/>
+                <outlet property="lblCountDescription" destination="cjI-zU-f2B" id="ebf-49-L8L"/>
+                <outlet property="lblCountTitle" destination="XLr-NB-gLy" id="AGf-U5-uX9"/>
+                <outlet property="lblDescription" destination="zpC-ez-Sbd" id="nsf-EO-9fY"/>
+                <outlet property="lblTitle" destination="pvj-V2-pCI" id="DgG-Dk-TYn"/>
+                <outlet property="tvDescription" destination="wEE-h9-Ux4" id="Kpw-rQ-soE"/>
+                <outlet property="tvTitle" destination="NPV-5P-1bo" id="nTH-dV-Xta"/>
+            </connections>
+            <point key="canvasLocation" x="278.62595419847327" y="137.32394366197184"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

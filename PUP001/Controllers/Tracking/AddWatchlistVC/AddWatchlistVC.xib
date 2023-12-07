@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Inter-SemiBold.ttf">
+            <string>Inter-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddWatchlistVC" customModule="PUP001" customModuleProvider="target">
+            <connections>
+                <outlet property="btnBack" destination="YP1-Gc-qYA" id="uUi-JY-C2j"/>
+                <outlet property="collectionView" destination="g2X-ga-WiO" id="GFX-s2-p3T"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleAspectFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YP1-Gc-qYA">
+                    <rect key="frame" x="16" y="74" width="36" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="36" id="4jT-Dh-ZfM"/>
+                        <constraint firstAttribute="height" constant="36" id="xAK-Hy-I7y"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="ic_back"/>
+                    <connections>
+                        <action selector="buttonBack:" destination="-1" eventType="touchUpInside" id="snn-HX-0Pr"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add watchlist" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V1G-6Z-a2X">
+                    <rect key="frame" x="130" y="74" width="133" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="o8D-5l-9Yu"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Inter-SemiBold" family="Inter" pointSize="20"/>
+                    <color key="textColor" red="0.15294117647058825" green="0.14117647058823529" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="g2X-ga-WiO">
+                    <rect key="frame" x="0.0" y="126" width="393" height="726"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="2fI-0c-uf7">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.94509803921568625" green="0.95294117647058818" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstItem="g2X-ga-WiO" firstAttribute="top" secondItem="YP1-Gc-qYA" secondAttribute="bottom" constant="16" id="68m-Wj-mWr"/>
+                <constraint firstAttribute="bottom" secondItem="g2X-ga-WiO" secondAttribute="bottom" id="G8n-Lu-dO8"/>
+                <constraint firstItem="g2X-ga-WiO" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="GDQ-MD-2Zw"/>
+                <constraint firstItem="V1G-6Z-a2X" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="NQL-MN-m20"/>
+                <constraint firstItem="YP1-Gc-qYA" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="15" id="fZY-y6-z0o"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="g2X-ga-WiO" secondAttribute="trailing" id="g4h-MT-6OF"/>
+                <constraint firstItem="V1G-6Z-a2X" firstAttribute="top" secondItem="YP1-Gc-qYA" secondAttribute="top" id="hHK-px-WOo"/>
+                <constraint firstItem="YP1-Gc-qYA" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="spm-Ly-7HU"/>
+            </constraints>
+            <point key="canvasLocation" x="818" y="-194"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_back" width="36" height="36"/>
+    </resources>
+</document>
